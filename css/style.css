@@ -1,0 +1,91 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  margin: 0; /* Remove margens padrão do navegador */
+  padding: 0; /* Remove preenchimento padrão */
+  background-color: #f0f0f0; /* Cor de fundo neutra */
+}
+
+/* Cabeçalho do site */
+header {
+  background-color: #0b2d5f; /* Fundo azul escuro */
+  color: white; /* Texto branco */
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style: none; /* Remove marcadores da lista */
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Centraliza os itens */
+}
+
+/* Itens do menu */
+nav ul li {
+  display: inline-block; /* Coloca os itens lado a lado */
+  padding: 5px 20px; /* Espaçamento interno de cada item */
+}
+
+/* Links do menu */
+nav ul li a {
+  display: inline-block;
+  color: #ffffff; /* Cor do link */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold; /* Texto em negrito */
+  text-transform: capitalize; /* Primeira letra em maiúscula */
+  font-size: 1rem; /* Tamanho base da fonte */
+  transition: 
+    color 0.3s, /* Transição suave da cor */
+    font-size 0.3s, /* Transição suave do tamanho da fonte */
+    text-decoration 0.3s; /* Transição suave do sublinhado */
+}
+
+/* Efeito ao passar o mouse nos links */
+nav ul li a:hover,
+nav ul li a:active {
+  color: #00e6aa; /* Cor em destaque */
+  text-decoration: underline; /* Sublinha o link */
+  font-size: 1.125rem; /* Aumenta o tamanho do texto */
+}
+
+/* Conteúdo principal */
+main {
+  background-image: url('imagens/fundo.jpg'); /* Imagem de fundo */
+  background-position: right; /* Alinha a imagem à direita */
+  background-repeat: no-repeat; /* Impede repetição da imagem */
+  background-size: contain; /* Ajusta a imagem dentro do espaço */
+  min-height: calc(100vh - 60px); /* Garante altura mínima da área visível menos o rodapé */
+  padding: 15px; /* Espaçamento interno */
+  padding-bottom: 60px; /* Espaço extra para o rodapé */
+  color: #333; /* Cor do texto principal */
+  width: 100%; /* Ocupa toda a largura da tela */
+}
+
+/* Rodapé fixo no final da tela */
+footer {
+  background-color: #0b2d5f; /* Cor de fundo azul escuro */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 10px; /* Espaçamento interno */
+  width: 100%; /* Ocupa toda a largura da tela */
+  bottom: 0; /* Alinha ao fundo */
+}
+
+/* Responsividade: para telas com até 600px de largura */
+@media (max-width: 600px) {
+  nav ul {
+    text-align: center; /* Mantém centralizado */
+  }
+
+  nav ul li {
+    display: block; /* Itens em coluna no celular */
+    padding: 10px 0; /* Espaçamento vertical */
+  }
+
+  main {
+    background-position: center; /* Centraliza a imagem no mobile */
+    background-size: cover; /* Faz a imagem ocupar todo o espaço */
+  }
+}
+
